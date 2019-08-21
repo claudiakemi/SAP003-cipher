@@ -14,9 +14,11 @@
     <form id="desocult" action="/action_page.php">
   Senha para ocultar:<input type="text" id="inputEncode">
   Deslocamento:<input type="number" id="offset">
-  <input type="button" onclick="onclick1" value="Ocultar!"><br><br>
+  <input type="button" onclick="onclickCipher()" value="Ocultar!"><br><br>
   Senha para desvendar:<input type="text" id="inputDecode">
-  <input type="button" onclick="onclick2" value="Decifrar!">
+  <input type="button" onclick="onclickDecipher()" value="Decifrar!">
+  <div id="resultEncode"></div>
+  <div id="resultDecode"></div>
 </form>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
