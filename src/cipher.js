@@ -7,7 +7,7 @@ window.cipher = {
 function encode(offset, inputEncode){
   let calculusResult=[];
   for (let i = 0; i < inputEncode.length; i++) {
-    calculusResult.push(((inputEncode.charCodeAt(i)-97+offset)%26)+97);
+    calculusResult.push(((inputEncode.charCodeAt(i)-65+offset)%72)+65);
   }
 
   let password=[];
@@ -15,21 +15,32 @@ function encode(offset, inputEncode){
     password.push(String.fromCharCode(calculusResult[i]));
   }
 
-  let criptoPassword = ""
+  let criptoPassword = "";
   for (let i = 0; i < password.length; i++) {
     criptoPassword=criptoPassword+password[i];
   }
 
   return criptoPassword;
-  //console.log(calculusResult);
-  /*let password=String.fromCharCode(calculusResult); //não recebe array
-  return password;*/
 
 }
 
-
 function decode(offset, inputDecode){
-  //fórmula
-  alert (offset + inputDecode);
+  let calculusResult=[];
+  for (let i = 0; i < inputDecode.length; i++) {
+    calculusResult.push(((inputDecode.charCodeAt(i)-65-offset)%72)+65);
+  }
+
+  let password=[];
+  for (let i = 0; i < calculusResult.length; i++) {
+    password.push(String.fromCharCode(calculusResult[i]));
+  }
+
+  let passwordRevealed = "";
+  for (let i = 0; i < password.length; i++) {
+    passwordRevealed=passwordRevealed+password[i];
+  }
+
+  return passwordRevealed;
+
 
 }

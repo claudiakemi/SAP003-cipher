@@ -6,7 +6,7 @@ function onclickCipher(){
 let offset = Number(document.getElementById('offset').value);
 let inputEncode = document.getElementById('inputEncode').value;
 let resultEncode = cipher.encode(offset, inputEncode);
-document.getElementById("resultEncode").innerHTML= `<p>Sua senha ocultada é ${resultEncode}.</p>`;
+document.getElementById("resultEncode").innerHTML= `<p>Sua senha ocultada é: <strong>${resultEncode}</strong></p>`;
 }
 
 function onclickDecipher(){
@@ -14,5 +14,5 @@ function onclickDecipher(){
 let offset = Number(document.getElementById('offset').value);
 let inputDecode = document.getElementById('inputDecode').value;
 let resultDecode = cipher.decode(offset, inputDecode);
-document.getElementById("resultDecode").innerHTML= `<p>Sua senha desvendada é ${resultDecode}.</p>`;
+document.getElementById("resultDecode").innerHTML= `<p>Sua senha desvendada é: <strong>${resultDecode}</strong></p>`;
 }
