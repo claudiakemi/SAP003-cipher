@@ -1,5 +1,19 @@
-form{
-  button: hover{
-    color: #7D7071;
-  }
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
+body h1{
+  font-family: 'Major Mono Display', monospace;
+  text-shadow: 3px 3px #AFB0A8;
+  font-size: 50px;
+}
+
+body{
+  border: thin double;
+  margin: 30px;
+  height: 590px;
+  text-align: center;
+  vertical-align: top;
+  font-family: 'Comfortaa', cursive;
+  font-size: 20px;
+  background-color: #B3F5B9;
 }

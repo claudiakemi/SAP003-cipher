@@ -7,7 +7,7 @@ window.cipher = {
 function encode(offset, inputEncode){
   let calculusResult=[];
   for (let i = 0; i < inputEncode.length; i++) {
-    calculusResult.push(((inputEncode.charCodeAt(i)-32+offset)%108)+32);
+    calculusResult.push(((inputEncode.charCodeAt(i)-32+offset)%96)+32);
   }
 
   let password=[];
@@ -27,7 +27,7 @@ function encode(offset, inputEncode){
 function decode(offset, inputDecode){
   let calculusResult=[];
   for (let i = 0; i < inputDecode.length; i++) {
-    calculusResult.push(((inputDecode.charCodeAt(i)-32-offset)%108)+32);
+    calculusResult.push(((inputDecode.charCodeAt(i)-32-offset)%96)+32);
   }
 
   let password=[];
