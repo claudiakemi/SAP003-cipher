@@ -4,10 +4,10 @@ window.cipher = {
   decode: decode
 };
 
-function encode(offset, inputEncode){
+function encode(offset, inputEncode) {
   let calculusResult=[];
   for (let i = 0; i < inputEncode.length; i++) {
-    calculusResult.push(((inputEncode.charCodeAt(i)-32+offset)%96)+32);
+    calculusResult.push(((inputEncode.charCodeAt(i)-65+offset)%26)+65);
   }
 
   let password=[];
@@ -24,10 +24,10 @@ function encode(offset, inputEncode){
 
 }
 
-function decode(offset, inputDecode){
+function decode(offset, inputDecode) {
   let calculusResult=[];
   for (let i = 0; i < inputDecode.length; i++) {
-    calculusResult.push(((inputDecode.charCodeAt(i)-32-offset)%96)+32);
+    calculusResult.push(((inputDecode.charCodeAt(i)-90-offset)%26)+90);
   }
 
   let password=[];
@@ -41,6 +41,5 @@ function decode(offset, inputDecode){
   }
 
   return passwordRevealed;
-
 
 }
