@@ -1,31 +1,58 @@
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
-body h1{
-  font-family: 'Major Mono Display', monospace;
-  text-shadow: 3px 3px #AFB0A8;
-  font-size: 50px;
-}
-
-body{
-  margin: 30px;
-  height: 590px;
+.content {
+  margin-top: 40px;
+  margin-bottom: 90px;
+  margin-left: 90px;
+  margin-right: 90px;
+  height: 860px;
   text-align: center;
   vertical-align: top;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', Verdana, cursive;
   font-size: 20px;
-  background-color: #B3F5B9;
-  border-style: dotted;
-  border-color: #563382;
-  border-width: 3px;
 }
 
-h3{
+.slogan {
   border-color: #563382;
   border-style: dotted;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-top-style: hidden;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  border-top-style: dotted;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #C9FACB;
+  border-radius: 25px;
+}
+
+.description {
+  border-color: #563382;
+  border-style: dotted;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  border-top-style: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 170%;
+  background-color: #E4D8FC;
+  border-radius: 25px;
+}
+
+.form1{
+  border-color: #563382;
+  border-style: dotted;
+  border-right-style: dotted;
+  border-left-style: dotted;
+  border-top-style: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-size: 20px;
+  background-color: #C9FACB;
+  border-radius: 25px;
 
 }
+
+
+
   /*<hr/ width="600px" color= #563382 style= "border-style: dotted">*/
