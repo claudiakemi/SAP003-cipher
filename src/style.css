@@ -52,24 +52,13 @@
   border-radius: 25px;
 }
 
-.buttonCipher{
+.btn {
   background-color: #BD84CC;
   border-radius: 12px;
   color: #FCFFFF;
   font-size: 18px;
 }
 
-.buttonCipher:hover {
-  background-color: #3e8e41;
-}
-
-.buttonDecipher{
-  background-color: #BD84CC;
-  border-radius: 12px;
-  color: #FCFFFF;
-  font-size: 18px;
-}
-
-.buttonDecipher:hover {
+.btn:hover {
   background-color: #3e8e41;
 }
