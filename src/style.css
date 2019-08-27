@@ -50,9 +50,26 @@
   font-size: 20px;
   background-color: #C9FACB;
   border-radius: 25px;
-
 }
 
+.buttonCipher{
+  background-color: #BD84CC;
+  border-radius: 12px;
+  color: #FCFFFF;
+  font-size: 18px;
+}
 
+.buttonCipher:hover {
+  background-color: #3e8e41;
+}
 
-  /*<hr/ width="600px" color= #563382 style= "border-style: dotted">*/
+.buttonDecipher{
+  background-color: #BD84CC;
+  border-radius: 12px;
+  color: #FCFFFF;
+  font-size: 18px;
+}
+
+.buttonDecipher:hover {
+  background-color: #3e8e41;
+}
