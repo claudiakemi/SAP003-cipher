@@ -13,20 +13,8 @@ function encode(offset, inputEncode) {
     if (inputEncode.charCodeAt(i) >= 97 && inputEncode.charCodeAt(i) <= 122) {
       criptoPassword+= String.fromCharCode(((inputEncode.charCodeAt(i)-97+offset)%26)+97);
     }
-    if (inputEncode.charCodeAt(i) >= 32 && inputEncode.charCodeAt(i) <= 47) {
-      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-32+offset)%26)+32);
-    }
-    if (inputEncode.charCodeAt(i) >= 48 && inputEncode.charCodeAt(i) <= 57) {
-      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-48+offset)%26)+48);
-    }
-    if (inputEncode.charCodeAt(i) >= 58 && inputEncode.charCodeAt(i) <= 64) {
-      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-58-offset)%26)+58);
-    }
-    if (inputEncode.charCodeAt(i) >= 91 && inputEncode.charCodeAt(i) <= 96) {
-      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-91+offset)%26)+91);
-    }
-    if (inputEncode.charCodeAt(i) >= 123 && inputEncode.charCodeAt(i) <= 255) {
-      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-123+offset)%26)+123);
+    if (inputEncode.charCodeAt(i) >= 32 && inputEncode.charCodeAt(i) <= 64) {
+      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-32+offset)%33)+32);
     }
   }
   return criptoPassword;
@@ -41,20 +29,8 @@ function decode(offset, inputDecode) {
     if (inputDecode.charCodeAt(i) >= 97 && inputDecode.charCodeAt(i) <= 122) {
       passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-122-offset)%26)+122);
     }
-    if (inputDecode.charCodeAt(i) >= 32 && inputDecode.charCodeAt(i) <= 47) {
-      passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-47-offset)%26)+47);
-    }
-    if (inputDecode.charCodeAt(i) >= 48 && inputDecode.charCodeAt(i) <= 57) {
-      passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-57-offset)%26)+57);
-    }
-    if (inputDecode.charCodeAt(i) >= 58 && inputDecode.charCodeAt(i) <= 64) {
-      passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-64-offset)%26)+64);
-    }
-    if (inputDecode.charCodeAt(i) >= 91 && inputDecode.charCodeAt(i) <= 96) {
-      passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-96-offset)%26)+96);
-    }
-    if (inputDecode.charCodeAt(i) >= 123 && inputDecode.charCodeAt(i) <= 255) {
-      passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-255-offset)%26)+255);
+    if (inputDecode.charCodeAt(i) >= 32 && inputDecode.charCodeAt(i) <= 64) {
+      passwordRevealed+=String.fromCharCode(((inputDecode.charCodeAt(i)-64-offset)%33)+64);
     }
   }
   return passwordRevealed;
