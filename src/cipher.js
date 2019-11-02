@@ -14,7 +14,7 @@ function encode(offset, inputEncode) {
       criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-97+offset)%26)+97);
     }
     if (inputEncode.charCodeAt(i) >= 32 && inputEncode.charCodeAt(i) <= 64) {
-      criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-32+offset)%33)+32);
+    criptoPassword+=String.fromCharCode(((inputEncode.charCodeAt(i)-32+offset)%33)+32);
     }
   }
   return criptoPassword;
